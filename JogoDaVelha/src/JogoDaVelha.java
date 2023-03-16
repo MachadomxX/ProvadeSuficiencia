@@ -52,14 +52,14 @@ public class JogoDaVelha {
                     };
                 }
                 //verifica se empatou
-                if(jogadas==8 && jogoMapa.ganhou('X') == jogoMapa.ganhou('O')){
+                jogadas++;
+                if(jogadas==9){
                     jogadas++;
                     jogoMapa.desenha(jogadas);
                     System.out.println("... EMPATOU!\r\n");
                     break;
                 }
                 inicio++;
-                jogadas++;
             }            
         }            
     }
